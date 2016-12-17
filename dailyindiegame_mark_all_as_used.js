@@ -19,20 +19,17 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
         $("#mark_all_as_used").click(
         function() {
-            //$("#mark_all_as_used_status").text("in process...");
             $("a[href*='_used_']").each(function(){
                 var t = $(this).find("span").html();
                 var e = $(this).find("span");
                 if (t.indexOf("Mark as used") >= 0)
                 {
-                    //$('#TableKeys').before($(this).attr('href'));
                     $.get($(this).attr('href'), function(data){
                         e.text("Done");
                     });
                 }
                 //break;
             });
-            //$("#mark_all_as_used_status").text("done!");
         }
     );
 })();
