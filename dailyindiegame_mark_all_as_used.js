@@ -2,10 +2,10 @@
 // @name         DailyindieGame - Mark all as used
 // @namespace    Shmurdik
 // @version      0.1
-// @description  try to take over the world!
+// @description  DailyindieGame - Mark all as used
 // @include      http://www.dailyindiegame.com/account_page.html
 // @include      http://www.dailyindiegame.com/account_page_*_browse_0.html
-// @author       You
+// @author       Shmurdik
 // @grant        none
 // ==/UserScript==
 
@@ -28,7 +28,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
                         e.text("Done");
                     });
                 }
-                //break;
             });
         }
     );
